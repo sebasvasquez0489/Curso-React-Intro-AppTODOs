@@ -2,7 +2,10 @@ import './TodoSearch.css';
 
 function TodoSearch() {
   return (
-    <input placeholder="Aprender React" />
+    <input 
+    placeholder="Buscar Tarea"
+    className='TodoSearch'
+    />
   );
 }
 
