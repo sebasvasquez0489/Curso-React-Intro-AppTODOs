@@ -11,7 +11,6 @@ const defaultTodos = [
   { text: 'Iniciar Curso Manipulación del DOM', completed: false },
   { text: 'Continuar curso ReactJS', completed: true },
   { text: 'Practicar lo aprendido', completed: false },
-  { text: 'Finalizar Curso ReactJS', completed: false },
 ];
 
 function App() {
@@ -19,8 +18,19 @@ function App() {
   const [todos, setTodos] = React.useState(defaultTodos);
   const [searchValue, setSearchValue] = React.useState('')
 
+  //--Estado derivado para validación de cuantos TODOs se han completado--//
   const completedTodos = todos.filter(todo => !!todo.completed).length;
   const totalTodos = todos.length;
+
+  //--Estado derivado para buscar TODOs--//
+  const searchedTodos = todos.filter(
+    (todo) => {
+      const todoText = todo.text.toLowerCase();
+      const searchText = searchValue.toLowerCase();
+      return todoText.includes(searchText);
+    }
+  );
+
 
   console.log('los usuarios buscan' + searchValue);
   return (
@@ -36,7 +46,7 @@ function App() {
       />
 
         <TodoList>
-          {defaultTodos.map(todo => (
+          {searchedTodos.map(todo => (
             <TodoItem 
             key={todo.text} 
             text={todo.text}
