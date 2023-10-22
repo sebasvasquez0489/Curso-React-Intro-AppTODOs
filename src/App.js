@@ -31,6 +31,7 @@ function App() {
     }
   );
 
+  //--Actualizador del estado--//
   const completeTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex(
@@ -48,8 +49,6 @@ function App() {
     newTodos.splice(todoIndex, 1);
     setTodos(newTodos);
   };
-
-
 
   return (
     <>
