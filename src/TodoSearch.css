@@ -1,0 +1,30 @@
+.TodoSearch {
+  background: #a2aeb1;
+  border-radius: 2px;
+  border: solid #ffffff;;
+  border-radius: 100px;
+  margin: 0 24px;
+  height: 25px;
+  width: calc(100% - 130px);
+  font-size: 16px;
+  text-align: center;
+  font-family: monospace;
+  color: #fffefe;
+  box-shadow: 0px 5px 50 px rgba(32, 35, 41, 0.25);
+}
+
+.TodoSearch::placeholder {
+  color: #f7f7f7;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+input:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #f7f7f700;
+}
+
+
+.TodoSearch:focus {
+  outline-color: #ffffff;
+}
