@@ -68,6 +68,7 @@ function App() {
             key={todo.text} 
             text={todo.text}
             completed={todo.completed}
+        //--Forma de pasarle una funcion a un componente si ejecutarla--//
             onComplete={() => completeTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
             />
