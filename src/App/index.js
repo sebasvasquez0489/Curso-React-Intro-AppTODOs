@@ -2,6 +2,8 @@ import React from 'react';
 import { AppUI } from './AppUI';
 import { useLocalStorage } from './useLocalStorage';
 
+// localStorage.removeItem('TODOS_V1');
+
 // const defaultTodos = [
 //   { text: 'Iniciar Curso ReactJS', completed: true },
 //   { text: 'Iniciar Curso Manipulación del DOM', completed: false },
@@ -11,13 +13,16 @@ import { useLocalStorage } from './useLocalStorage';
 
 // localStorage.setItem('TODOS_V1', JSON.
 // stringify(defaultTodos));
-// localStorage.removeItem('TODOS_V1');
 
 
 function App() {
-
   //AGREGANDO ESTADOS
-  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
+  const {
+    item: todos, 
+    saveItem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = React.useState('')
 
   //--Estado derivado para validación de cuantos TODOs se han completado--//
@@ -54,6 +59,8 @@ function App() {
 
   return (
     <AppUI
+      loading={loading}
+      error={error}
       completedTodos={completedTodos}
       totalTodos={totalTodos}
       searchValue={searchValue}
