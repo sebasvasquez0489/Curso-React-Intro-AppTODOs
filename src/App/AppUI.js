@@ -9,6 +9,7 @@ import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../modal';
+import {TodoForm } from '../todoForm';
 import { TodoContext } from "../TodoContext";
 
 function AppUI() {
@@ -44,11 +45,13 @@ function AppUI() {
             ))}
         </TodoList>
 
-      <CreateTodoButton />
+      <CreateTodoButton
+        setOpenModal={setOpenModal}
+      />
       
       {openModal && (
         <Modal>
-          FUNCION DE AGREGAR TAREAS
+          <TodoForm />
         </Modal>
       )}
     </>
