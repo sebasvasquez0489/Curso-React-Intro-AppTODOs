@@ -1,7 +1,7 @@
 .TodoSearch {
   background: #a2aeb1;
-  border-radius: 2px;
-  border: solid #ffffff;;
+
+  border: solid 2px #ffffff;;
   border-radius: 100px;
   margin: 0 24px;
   height: 25px;
@@ -21,7 +21,7 @@
 
 input:hover {
   box-shadow: 0 1px 6px 0 #20212447;
-  border-color: #f7f7f700;
+  border-color: #a53d3d00;
 }
 
 

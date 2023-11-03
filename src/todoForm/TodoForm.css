@@ -38,7 +38,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-  outline-color: #4ac7b2;
+  outline-color: #23927f;
 }
 
 .TodoForm-buttonContainer {
@@ -63,11 +63,26 @@ textarea:focus {
 }
 
 .TodoForm-button--add {
-  background: #59e4cd;
-  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
-  border-radius: 10px;
+  border-radius: 10px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #23927f;
+  position: relative;
+}
+.TodoForm-button--add:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 16px rgb(10, 136, 106);
+  transition: all 0.2s ease;
 }
 
 .TodoForm-button--cancel {
-  background: transparent;
+  background: rgb(131, 14, 14);
+  border-radius: 10px; 
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  position: relative;
 }

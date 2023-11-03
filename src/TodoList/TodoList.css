@@ -7,6 +7,7 @@
   padding: 0;
   border-radius: 16px;
   box-shadow: 5px 15px 50px rgba(255, 255, 255, 0.25);
+  background: rgba(7, 80, 80, 0.25) ;
 }
 
 ul li {

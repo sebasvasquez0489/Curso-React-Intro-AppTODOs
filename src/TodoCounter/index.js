@@ -11,9 +11,8 @@ function TodoCounter() {
   return (
     
     totalTodos == completedTodos ? 
-      <h2 className='TodoCounter'>Felicidades, has completado todas las tareas ✔</h2>
+      <h2 className='TodoCounter'>Crea nuevas Tareas !!!</h2>
       :
-
       <h1 className='TodoCounter'>
          Has completado <span>{completedTodos}</span> de <span>{totalTodos} </span>Tareas
       </h1>
