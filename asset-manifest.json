@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Users/Sebastian%20Vasquez/Programacion/Cursos%20Platzi/Curso-React-Intro-AppTODOs/build/static/css/main.8e18d899.css",
+    "main.js": "/Users/Sebastian%20Vasquez/Programacion/Cursos%20Platzi/Curso-React-Intro-AppTODOs/build/static/js/main.034ec6bf.js",
+    "index.html": "/Users/Sebastian%20Vasquez/Programacion/Cursos%20Platzi/Curso-React-Intro-AppTODOs/build/index.html",
+    "static/media/delete.svg": "/Users/Sebastian%20Vasquez/Programacion/Cursos%20Platzi/Curso-React-Intro-AppTODOs/build/static/media/delete.1c25a77cc20239848cbb51b4781a9d45.svg",
+    "static/media/check.svg": "/Users/Sebastian%20Vasquez/Programacion/Cursos%20Platzi/Curso-React-Intro-AppTODOs/build/static/media/check.602d673f883484e38ed985e59c2ae066.svg",
+    "main.8e18d899.css.map": "/Users/Sebastian%20Vasquez/Programacion/Cursos%20Platzi/Curso-React-Intro-AppTODOs/build/static/css/main.8e18d899.css.map",
+    "main.034ec6bf.js.map": "/Users/Sebastian%20Vasquez/Programacion/Cursos%20Platzi/Curso-React-Intro-AppTODOs/build/static/js/main.034ec6bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e18d899.css",
+    "static/js/main.034ec6bf.js"
+  ]
+}
